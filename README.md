@@ -34,3 +34,10 @@ mvn spring-boot:run
 ```
 
 to build and run the application on your local environment.
+
+Type 
+```bash
+curl http://localhost:8080/greeting/NAME
+```
+to send a simple Pushover notification.
+
