@@ -3,6 +3,6 @@ pushover:
   userId: <YOUR PUSHOVER ID>
   priority: HIGH
   title: Message
-  url: http://ksbrwsk.de
+  url: https://ksbrwsk.de
   titleForUrl: Kai Saborowski
   sound: magic
