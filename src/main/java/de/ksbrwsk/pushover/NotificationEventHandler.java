@@ -21,9 +21,10 @@ public class NotificationEventHandler {
         var result = pushoverClient.pushMessage(
                 PushoverMessage.builderWithApiToken(pushoverProperties.getApiToken())
                         .setUserId(pushoverProperties.getUserId())
-                        .setMessage(notification.getMessage())
+                        .setMessage(notification.message())
+                        .setHTML(true)
                         .setPriority(MessagePriority.NORMAL)
-                        .setTitle(notification.getTitle())
+                        .setTitle(notification.title())
                         .setUrl(pushoverProperties.getUrl())
                         .setTitleForURL(pushoverProperties.getTitleForURL())
                         .setSound(pushoverProperties.getSound())

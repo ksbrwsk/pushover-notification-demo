@@ -17,8 +17,8 @@ public class GreetingHandler {
     Mono<ServerResponse> handleGreetingRequest(ServerRequest serverRequest) {
         log.info("handle request {} - {}", serverRequest.method(), serverRequest.path());
         var name = serverRequest.pathVariable("name");
-        var message = "Hello, " + name + "!";
-        Notification notification = new Notification("new Greeting", message);
+        var message = String.format("Hello, <b>%s</b>!<br/>Greeting from <a href=\"https://github.com/ksbrwsk/pushover-notification-demo\">pushover-notification-demo</a>", name);
+        Notification notification = new Notification("Message", message);
         this.pushoverEventPublisher.newPushoverEvent(notification);
         return ServerResponse
                 .ok()
