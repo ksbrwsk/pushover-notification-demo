@@ -14,7 +14,7 @@
 	<name>pushover-notification-demo</name>
 	<description>Spring Boot Pushover Demo</description>
 	<properties>
-		<java.version>16</java.version>
+		<java.version>17</java.version>
 		<pushover-client.version>1.1.1</pushover-client.version>
 	</properties>
 	<dependencies>
