@@ -4,7 +4,7 @@ Spring Boot App demonstrating the use of [Pushover](https://pushover.net/) notif
 
 **Prerequisites:**
 
-* [Java 17](https://openjdk.net/)
+* [Java 21](https://openjdk.net/)
 * [Apache Maven](https:http://maven.apache.org/)
 
 #### How to build and run
